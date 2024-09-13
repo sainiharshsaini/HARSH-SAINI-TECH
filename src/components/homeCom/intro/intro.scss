@@ -1,0 +1,99 @@
+body {
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
+    --hover-color: hsl(208, 23%, 31%);
+}
+
+.home-intro {
+    height: calc(100vh - 70px);
+    background-color: var(--background-color);
+
+    .home-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(135deg, var(--hover-color), var(--background-color));
+        border-radius: 0 0 0 15rem;
+
+        .hero-section {
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h1 {
+                font-size: 6rem;
+                color: rgb(27, 27, 27);
+                font-weight: 500;
+
+                span {
+                    color: rgb(28, 26, 26);
+                    font-weight: 700;
+                }
+            }
+
+            p {
+                font-size: 1.3rem;
+                color: rgb(17, 17, 17);
+                font-style: italic;
+                margin-top: 2rem;
+                text-align: center;
+            }
+
+            button {
+                border: none;
+                outline: none;
+                background: var(--background-color);
+                color: var(--text-color);
+                height: 2.9rem;
+                padding: 0.6rem 2rem;
+                border-radius: 0.3rem;
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 2rem;
+
+                &:hover {
+                    background: var(--hover-color);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .home-intro {
+        height: calc(70vh - 70px);
+
+        .home-content {
+            height: 100%;
+
+            .hero-section {
+                height: 100%;
+                padding: 1.5rem;
+
+
+                h1 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    margin-top: 2.5rem;
+                }
+
+                button {
+                    position: relative;
+                    left: 20%;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+
+    }
+}

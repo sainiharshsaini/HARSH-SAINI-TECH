@@ -1,0 +1,12 @@
+body {
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
+    --hover-color: hsl(208, 23%, 31%);
+}
+
+.portfolio{
+    position: relative;
+    top: 70px;
+    background: var(--background-color);
+}

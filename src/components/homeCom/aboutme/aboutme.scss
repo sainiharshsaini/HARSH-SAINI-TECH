@@ -1,0 +1,64 @@
+body {
+    --background-color: hsl(207, 26%, 17%);
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
+    --hover-color: hsl(208, 23%, 31%);
+}
+
+.aboutme{
+    width: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0;
+
+    .aboutme-section{
+        width: 70%;
+        background-color: var(--elements-color);
+        color: var(--text-color);
+        padding: 4rem;
+        border-radius: 0.5rem 0.5rem 8rem 0.5rem;
+        border-top: 8px solid royalblue;
+        box-shadow: 5px 5px 0 0 var(--hover-color) ;
+        cursor: pointer;
+
+        h2{
+            font-size: 2.5rem;
+            width: 12rem;
+            font-weight: 500;
+            border-bottom: 2px solid royalblue;
+        }
+
+        p{
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-top: 3rem;
+
+            span{
+                color: royalblue;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutme{
+        padding: 3rem 0;
+
+        .aboutme-section{
+            width: 85%;
+            padding: 1.5rem;
+
+            h2{
+                font-size: 2rem;
+                width: 9.5rem;
+            }
+
+            p{
+                margin-top: 2rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
