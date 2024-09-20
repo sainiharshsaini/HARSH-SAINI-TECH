@@ -1,8 +1,13 @@
 import './projectsintro.scss'
 
+import { useTheme } from '../../../hooks/useTheme'
+
 const Projectsintro = () => {
+
+    const [isdark] = useTheme()
+
     return (
-        <div className='intro'>
+        <div className={`intro ${isdark ? 'dark' : ''}`}>
             <div className="intro-heading">
                 <h1>My Portfolio</h1>
                 <h2>A Blend of <span>Creativity</span> and <span>Code</span></h2>

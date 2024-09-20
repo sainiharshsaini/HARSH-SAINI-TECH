@@ -1,12 +1,5 @@
-body {
-    --background-color: hsl(207, 26%, 17%);
-    --text-color: white;
-    --elements-color: hsl(209, 23%, 22%);
-    --hover-color: hsl(208, 23%, 31%);
-}
-
 .intro{
-    height: 60vh;
+    height: 100%;
     background-color: var(--background-color);
     color: var(--text-color);
     display: flex;
@@ -17,6 +10,7 @@ body {
     .intro-heading{
         text-align: center;
         width: 60%;
+        margin: 5rem 0;
 
         h1{
             font-size: 2.4rem;
@@ -44,9 +38,8 @@ body {
 
 @media screen and (max-width: 768px) {
     .intro{
-        height: 55vh;
-
         .intro-heading{
+            margin: 3rem 0;
             width: 85%;
 
             h2{

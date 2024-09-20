@@ -1,20 +1,25 @@
 import './mytechstack.scss'
 
-import htmlIcon from '../../../assets/HTML_icon.svg'
-import cssIcon from '../../../assets/CSS_icon.svg'
-import jsIcon from '../../../assets/JS_icon.svg'
-import reactIcon from '../../../assets/React_icon.svg'
-import bootstrapIcon from '../../../assets/Bootstrap_icon.svg'
-import nodeIcon from '../../../assets/Node_icon.svg'
-import expressIcon from '../../../assets/Express_icon.svg'
-import mongodbIcon from '../../../assets/MongoDB_icon.svg'
-import vscodeIcon from '../../../assets/VSCode_icon.svg'
-import gitIcon from '../../../assets/Git_icon.svg'
-import githubIcon from '../../../assets/Github_icon.svg'
+import htmlIcon from '../../../assets/icons/HTML_icon.svg'
+import cssIcon from '../../../assets/icons/CSS_icon.svg'
+import jsIcon from '../../../assets/icons/JS_icon.svg'
+import reactIcon from '../../../assets/icons/React_icon.svg'
+import bootstrapIcon from '../../../assets/icons/Bootstrap_icon.svg'
+import nodeIcon from '../../../assets/icons/Node_icon.svg'
+import expressIcon from '../../../assets/icons/Express_icon.svg'
+import mongodbIcon from '../../../assets/icons/MongoDB_icon.svg'
+import vscodeIcon from '../../../assets/icons/VSCode_icon.svg'
+import gitIcon from '../../../assets/icons/Git_icon.svg'
+import githubIcon from '../../../assets/icons/Github_icon.svg'
+
+import { useTheme } from '../../../hooks/useTheme'
 
 const MyTechStack = () => {
+
+    const [isdark] = useTheme()
+
     return (
-        <div className='mytechstack'>
+        <div className={`mytechstack ${isdark ? 'dark' : ''}`}>
             <div className="skills-content">
                 <h2>My Tech Stack</h2>
                 <div className="stack-icon">

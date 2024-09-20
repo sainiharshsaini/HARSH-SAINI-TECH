@@ -1,10 +1,3 @@
-body {
-    --background-color: hsl(207, 26%, 17%);
-    --text-color: white;
-    --elements-color: hsl(209, 23%, 22%);
-    --hover-color: hsl(208, 23%, 31%);
-}
-
 .mytechstack{
     background-color: var(--background-color);
     display: flex;
@@ -24,29 +17,28 @@ body {
         }
 
         .stack-icon{
-            width: 90%;
+            width: 80%;
             margin-top: 5rem;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
 
             .icon{
-                background-color: var(--text-color);
-                height: 10rem;
-                width: 10rem;
+                background-color: var(--shadow-color);
+                height: 9rem;
+                width: 9rem;
                 overflow: hidden;
                 padding: 0.5rem;
-                border-radius: 0.3rem;
-                box-shadow: 5px 5px 0 4px var(--elements-color);
+                border-radius: 0.5rem;
+                box-shadow: 4px 4px 0 2px var(--elements-color);
                 margin: 2rem;
                 cursor: pointer;
 
                 &:hover{
-                    box-shadow: 5px 5px 0 4px var(--hover-color);
+                    box-shadow: 4px 4px 0 2px var(--hover-color);
                 }
 
                 img{
-                    background-color: var(--text-color);
                     height: 100%;
                     width: 100%;
                 }
@@ -64,19 +56,19 @@ body {
             }
 
             .stack-icon{
+                width: 90%;
                 margin: 1.5rem 0;
 
                 .icon{
                     height: 6rem;
                     width: 6rem;
-                    margin: 1.5rem 1rem;
-                    padding: 0.3rem;
-                    box-shadow:5px 5px 0 3px var(--elements-color);
+                    padding: 0.4rem;
+                    margin: 1rem;
+                    box-shadow: 3px 3px 0 2px var(--elements-color);
 
                     &:hover{
-                        box-shadow: 5px 5px 0 3px var(--hover-color);
+                        box-shadow: 3px 3px 0 2px var(--hover-color);
                     }
-    
                 }
             }
         }

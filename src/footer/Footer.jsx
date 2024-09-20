@@ -4,16 +4,21 @@ import HarshLogo from '../assets/harshnew.jpg'
 
 import { Link } from 'react-router-dom'
 
+import { useTheme } from '../hooks/useTheme'
+
 const Footer = () => {
+
+    const [isdark] = useTheme()
+
     return (
-        <div className="footer">
+        <div className={`footer ${isdark ? 'dark' : ''}`}>
             <div className="footer-item">
                 <div className="left-footer">
                     <img src={HarshLogo} alt="HarshSainiLogo" />
                     <h1>HARSH SAINI</h1>
                     <p>Coding the future: personalized Web development services.</p>
                     <div className="email-link">
-                        <Link to="singhharshsaini7@gmail.com"><i className="fa-regular fa-envelope"></i> : singhharshsaini7@gmail.com</Link>
+                        <Link to="mailto: singhharshsaini7@gmail.com"><i className="fa-regular fa-envelope"></i> : singhharshsaini7@gmail.com</Link>
                     </div>
                 </div>
                 <div className="right-footer">
@@ -30,9 +35,9 @@ const Footer = () => {
                     <div className="right-link">
                         <h4>Updates</h4>
                         <div className="updates">
-                            <Link to="/">Blog</Link>
-                            <Link to="/">FAQ</Link>
-                            <Link to="/">Portfolio</Link>
+                            <Link to="/blog">Blog</Link>
+                            <Link to="/faq">FAQ</Link>
+                            <Link to="/portfolio">Portfolio</Link>
                         </div>
                     </div>
                 </div>

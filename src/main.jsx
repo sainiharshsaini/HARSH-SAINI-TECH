@@ -12,6 +12,8 @@ import Error from './pages/error/Error.jsx';
 import Home from './pages/home/Home.jsx'
 import Portfolio from './pages/portfolio/Portfolio.jsx'
 import Contact from './pages/contact/Contact.jsx'
+import Blog from './pages/Blog/Blog.jsx';
+import FAQ from './pages/FAQ/FAQ.jsx';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "contact/:contactId",
         element: <Contact/>,
+      },
+      {
+        path: "/blog",
+        element: <Blog/>,
+      },
+      {
+        path: "/faq",
+        element: <FAQ/>,
       },
     ],
   },

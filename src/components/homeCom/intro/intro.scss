@@ -1,10 +1,3 @@
-body {
-    --background-color: hsl(207, 26%, 17%);
-    --text-color: white;
-    --elements-color: hsl(209, 23%, 22%);
-    --hover-color: hsl(208, 23%, 31%);
-}
-
 .home-intro {
     height: calc(100vh - 70px);
     background-color: var(--background-color);
@@ -15,7 +8,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(135deg, var(--hover-color), var(--background-color));
+        background: linear-gradient(135deg, var(--shadow-color), var(--elements-color));
         border-radius: 0 0 0 15rem;
 
         .hero-section {
@@ -48,7 +41,7 @@ body {
             button {
                 border: none;
                 outline: none;
-                background: var(--background-color);
+                background: var(--elements-color);
                 color: var(--text-color);
                 height: 2.9rem;
                 padding: 0.6rem 2rem;

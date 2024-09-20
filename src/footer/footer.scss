@@ -1,10 +1,3 @@
-body {
-    --background-color: hsl(207, 26%, 17%);
-    --text-color: white;
-    --elements-color: hsl(209, 23%, 22%);
-    --hover-color: hsl(208, 23%, 31%);
-}
-
 .footer {
     background-color: var(--elements-color);
     color: var(--text-color);
@@ -15,7 +8,6 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // background-color: lightcoral;
         height: 100%;
         padding: 7rem 0 2rem 0;
 
@@ -26,7 +18,7 @@ body {
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-            // background-color: lightblue;
+            // background-color: aliceblue;
 
             img {
                 width: 8rem;
@@ -51,7 +43,7 @@ body {
                     font-size: 1rem;
                     color: var(--text-color);
                     text-decoration: none;
-                    background-color: var(--background-color);
+                    background-color: var(--elements-inside-color);
                     padding: 0.3rem 1.5rem;
                     border-radius: 1rem;
 
@@ -69,14 +61,13 @@ body {
             align-items: center;
             justify-content: space-between;
             padding: 1rem 0;
-            // background-color: palevioletred;
 
             .left-link {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                
+
                 h4 {
                     font-size: 1.5rem;
                     border-bottom: 2px solid var(--text-color);
@@ -93,13 +84,13 @@ body {
                         margin-top: 0.8rem;
                         color: #333;
                         text-decoration: none;
-                        background-color: var(--background-color);
+                        background-color: var(--elements-inside-color);
                         color: var(--text-color);
                         padding: 0.6rem 1.5rem;
                         border-radius: 0.1rem 1rem;
                         text-align: center;
 
-                        i{
+                        i {
                             position: relative;
                             font-size: 1.3rem;
                             right: 0.2rem;
@@ -135,7 +126,7 @@ body {
                         margin-top: 0.8rem;
                         color: #333;
                         text-decoration: none;
-                        background-color: var(--background-color);
+                        background-color: var(--elements-inside-color);
                         color: var(--text-color);
                         padding: 0.6rem 1.5rem;
                         border-radius: 0.1rem 1rem;
@@ -154,28 +145,54 @@ body {
 @media screen and (max-width: 768px) {
     .footer {
         padding: 0;
-        height: 100vh;
+        height: 50rem;
 
         .footer-item {
             flex-direction: column;
+            padding: 5.5rem 0 1.5rem 0;
+
 
             .left-footer {
                 height: 50%;
                 width: 80%;
 
-                
-                h4 {
-                    font-size: 1.2rem;
+                p {
+                    font-size: 1rem;
+                    text-align: center;
                 }
 
             }
 
             .right-footer {
                 height: 50%;
-                width: 80%;
+                width: 70%;
+                padding-top: 2rem;
 
-                h4 {
-                    font-size: 1.2rem;
+                .left-link {
+
+                    h4 {
+                        font-size: 1.2rem;
+                        width: 73%;
+                    }
+
+                    .socialLink {
+                        a {
+                            padding: 0.4rem 1rem;
+                        }
+                    }
+                }
+
+                .right-link {
+                    h4 {
+                        font-size: 1.2rem;
+                        width: 80%;
+                    }
+
+                    .updates {
+                        a {
+                            padding: 0.4rem 1rem;
+                        }
+                    }
                 }
             }
         }

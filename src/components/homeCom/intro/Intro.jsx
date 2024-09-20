@@ -1,8 +1,13 @@
 import './intro.scss'
 
+import { useTheme } from '../../../hooks/useTheme'
+
 const Intro = () => {
+
+    const [isdark] = useTheme()
+
     return (
-        <div className='home-intro'>
+        <div className={`home-intro ${isdark ? 'dark' : ''}`}>
             <div className="home-content">
                 <div className="hero-section">
                     <h1>Hi,<br /> I'm <span>Harsh Saini</span>, <br />a Web Developer</h1>

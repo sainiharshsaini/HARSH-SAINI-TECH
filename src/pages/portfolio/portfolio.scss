@@ -1,12 +1,136 @@
-body {
-    --background-color: hsl(207, 26%, 17%);
-    --text-color: white;
-    --elements-color: hsl(209, 23%, 22%);
-    --hover-color: hsl(208, 23%, 31%);
-}
-
 .portfolio{
     position: relative;
     top: 70px;
     background: var(--background-color);
+
+    .portfolio-project {
+        padding: 5rem 0;
+        width: 100%;
+        background: var(--elements-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        .project-card {
+            background-color: var(--background-color);
+            width: 80%;
+            padding: 1.5rem;
+            display: flex;
+            color: var(--text-color);
+            flex-direction: row;
+            border-radius: 0.3rem;
+            border-top: 0.4rem solid royalblue;
+            box-shadow: 5px 5px 0 1px var(--shadow-color);
+
+            &:hover{
+                box-shadow: 5px 5px 0 1px var(--hover-color);
+            }
+
+            .card-img-top {
+                border: 0.01rem solid var(--shadow-color);
+                width: 50%;
+            }
+    
+            .card-body {
+                margin: 0 3rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                h3{
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                }
+    
+                p {
+                    font-size: 1.1rem;
+                    padding-bottom: 1rem;
+                    border-bottom: 2px solid royalblue;
+                }
+    
+                .technology-use {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    padding-bottom: 1rem;
+    
+                    img {
+                        width: 2.5rem;
+                        margin-right: 1rem;
+                    }
+                }
+
+                .link-btn{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+
+                    a {
+                        width: 40%;
+                        background: var(--elements-inside-color);
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                        padding: 0.4rem;
+                        border-radius: 0.2rem;
+                        text-align: center;
+                        cursor: pointer;
+                        color: var(--text-color);
+                        text-decoration: none;
+        
+                        &:hover{
+                            background-color: var(--hover-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+    
+        .portfolio-project{
+            padding: 3rem 0;
+    
+            .project-card{
+                width: 90%;
+                display: block;
+                padding: 0.5rem;
+                
+                .card-img-top{
+                    width: 100%;
+                }
+    
+                .card-body{
+                    margin: 1rem;
+                    display: block;
+
+                    h3{
+                        font-size: 1.2rem;
+                    }
+        
+                    p{
+                        font-size: 1rem;
+                        padding: 1rem 0;
+                        color: var(--text-color);
+                    }
+    
+                    .technology-use{
+                        padding: 1.2rem 0; 
+    
+                        img{
+                            width: 2rem;
+                        }
+                    }
+
+                    .link-btn{
+                        justify-content: space-between;
+
+                        a {
+                            width: 45%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
