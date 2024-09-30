@@ -1,6 +1,7 @@
 import './intro.scss'
 
 import { useTheme } from '../../../hooks/useTheme'
+import { Link } from 'react-router-dom'
 
 const Intro = () => {
 
@@ -8,11 +9,19 @@ const Intro = () => {
 
     return (
         <div className={`home-intro ${isdark ? 'dark' : ''}`}>
-            <div className="home-content">
-                <div className="hero-section">
-                    <h1>Hi,<br /> I'm <span>Harsh Saini</span>, <br />a Web Developer</h1>
-                    <p>Crafting seamless and dynamic web experiences that bring ideas to life.</p>
-                    <button>Get in Touch <i className="fa-solid fa-arrow-right-long"></i></button>
+            <div className="home-section">
+                <div className="home-content">
+                    <div className='home-name'>
+                        <h1>HEY, I'M HARSH SAINI</h1>
+                    </div>
+                    <div className="home-sub-heading">
+                        <p>A passionate web developer specializing in building modern, responsive web applications. I have a strong interest in creating scalable SaaS platforms that enhance user experience and solve real-world problems.</p>
+                    </div>
+                    <div className='home-btn'>
+                        <Link to='/projects'>
+                            PROJECTS <i className="fa-solid fa-arrow-right-long"></i>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

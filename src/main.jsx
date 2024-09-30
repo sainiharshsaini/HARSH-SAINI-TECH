@@ -10,10 +10,9 @@ import {
 
 import Error from './pages/error/Error.jsx';
 import Home from './pages/home/Home.jsx'
-import Portfolio from './pages/portfolio/Portfolio.jsx'
+import About from './pages/about/About.jsx';
+import Projects from './pages/projects/Projects.jsx'
 import Contact from './pages/contact/Contact.jsx'
-import Blog from './pages/Blog/Blog.jsx';
-import FAQ from './pages/FAQ/FAQ.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,25 +25,20 @@ const router = createBrowserRouter([
         element: <Home/>,
       },
       {
-        path: "portfolio",
-        element: <Portfolio/>,
+        path: "about",
+        element: <About/>,
+      },
+      {
+        path: "projects",
+        element: <Projects/>,
       },
       {
         path: "contact/:contactId",
         element: <Contact/>,
       },
-      {
-        path: "/blog",
-        element: <Blog/>,
-      },
-      {
-        path: "/faq",
-        element: <FAQ/>,
-      },
     ],
   },
 ]);
-
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

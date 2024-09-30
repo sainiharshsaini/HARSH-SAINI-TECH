@@ -1,8 +1,9 @@
 import { useState } from "react";
 import "./header.scss";
-import { NavLink} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 import HarshLogo from "../assets/harshnew.jpg";
+import HarshResume from '../assets/HarshResumeNew.png'
 
 import { useTheme } from "../hooks/useTheme";
 
@@ -29,22 +30,32 @@ const Header = () => {
             <div className="navbar-data">
                 <div className="logo">
                     <img src={HarshLogo} alt="harshsainilogo" />
-                    HARSH SAINI
+                    <span>HARSH SAINI</span>
                 </div>
                 <ul className={isMobileMenuOpen ? "nav-links-mobile" : "nav-links"}>
                     <li>
                         <NavLink className={navlinkbg} onClick={handleClick} to="/">
-                            Home
+                            HOME
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink className={navlinkbg} onClick={handleClick} to="portfolio">
-                            Portfolio
+                        <NavLink className={navlinkbg} onClick={handleClick} to="about">
+                            ABOUT
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={navlinkbg} onClick={handleClick} to="projects">
+                            PROJECTS
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink className={navlinkbg} onClick={handleClick} to="contact/:contactId">
+                            CONTACT
                         </NavLink>
                     </li>
                 </ul>
                 <div
-                    className={isMobileMenuOpen ? "social-links-mobile" : "socialLink"}
+                    className={isMobileMenuOpen ? "mode-cv-mobile" : "mode-cv"}
                 >
                     <p
                         className="theme-changer"
@@ -55,13 +66,10 @@ const Header = () => {
                     >
                         <i className={`fa-solid fa-${isDark ? "sun" : "moon"}`} />
                     </p>
-                    <NavLink
-                        className={navlinkbg}
-                        onClick={handleClick}
-                        to="contact/:contactId"
-                    >
-                        CONTACT
-                    </NavLink>
+
+                    <Link to={HarshResume} download="HarshSainiResume" target='_blank'>
+                        <button>RESUME <i className="fa-solid fa-download"></i></button>
+                    </Link>
                 </div>
 
                 <button className="mobile-menu-icon" onClick={toggleMobileMenu}>

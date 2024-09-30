@@ -1,6 +1,6 @@
 import Projectsintro from '../../components/portfolioCom/projectsintro/Projectsintro'
 
-import './portfolio.scss'
+import './projects.scss'
 
 import { Link } from "react-router-dom";
 

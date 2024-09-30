@@ -3,7 +3,6 @@ import './home.scss'
 import Intro from '../../components/homeCom/intro/Intro'
 import Aboutme from '../../components/homeCom/aboutme/Aboutme'
 import MyTechStack from '../../components/homeCom/mytechstack/MyTechStack'
-import Resume from '../../components/homeCom/resume/Resume'
 
 const Home = () => {
     return (
@@ -11,7 +10,6 @@ const Home = () => {
             <Intro/>
             <Aboutme/>
             <MyTechStack/>
-            <Resume/>
         </div>
     )
 }

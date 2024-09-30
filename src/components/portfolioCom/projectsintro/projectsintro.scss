@@ -1,6 +1,6 @@
 .intro{
     height: 100%;
-    background-color: var(--background-color);
+    background-color: var(--elements-color);
     color: var(--text-color);
     display: flex;
     flex-direction: column;
@@ -11,10 +11,18 @@
         text-align: center;
         width: 60%;
         margin: 5rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         h1{
-            font-size: 2.4rem;
-            font-weight: 500;
+            font-size: 2.5rem;
+            width: 32%;
+            font-weight: 600;
+            border-bottom: 0.1rem solid var(--elements-inside-color2);
+            color: var(--heading-color);
+            text-align: center;
         }
 
         h2{
@@ -23,13 +31,13 @@
             padding: 2.5rem 0;
 
             span{
-                color: royalblue;
+                color: var(--elements-inside-color2);
             }
         }
         
         p{
             font-size: 1.1rem;
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.04rem;
             color: var(--text-color);
             line-height: 1.8rem;
         }
@@ -41,6 +49,12 @@
         .intro-heading{
             margin: 3rem 0;
             width: 85%;
+
+            h1{
+                font-size: 2rem;
+                width: 55%;
+                line-height: 2.5rem;
+            }
 
             h2{
                 padding: 2rem 0;

@@ -12,7 +12,7 @@ const Footer = () => {
 
     return (
         <div className={`footer ${isdark ? 'dark' : ''}`}>
-            <div className="footer-item">
+            <div className="upper-footer">
                 <div className="left-footer">
                     <img src={HarshLogo} alt="HarshSainiLogo" />
                     <h1>HARSH SAINI</h1>
@@ -22,25 +22,22 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="right-footer">
-                    <div className="left-link">
-                        <h4>Find me at</h4>
-                        <div className="socialLink">
-                            <Link to="https://www.linkedin.com/in/harsh-saini-158709238"><i className="fa-brands fa-linkedin-in"></i>  Linkedin</Link>
-                            <Link to="https://x.com/harshsaini_18?t=_zx6F5EH11KJBifgNn7TxA&s=09"><i className="fa-brands fa-twitter"></i> Twitter</Link>
-                            <Link to="https://github.com/sainiharshsaini"><i className="fa-brands fa-github"></i> Github</Link>
-                            <Link to="https://www.instagram.com/harshsaini.tech/"><i className="fa-brands fa-instagram"></i> Instagram</Link>
-                            <Link to="https://wa.me/qr/4AD67ER2Z2ZRD1"><i className="fa-brands fa-whatsapp"></i> WhatsApp</Link>
+                    <div className='social-box'>
+                        <p>Get in touch with me via social media.</p>
+                        <div className="social-link">
+                            <Link to="https://www.linkedin.com/in/harsh-saini-158709238"><i className="fa-brands fa-linkedin-in"></i></Link>
+                            <Link to="https://x.com/harshsaini_18?t=_zx6F5EH11KJBifgNn7TxA&s=09"><i className="fa-brands fa-twitter"></i></Link>
+                            <Link to="https://github.com/sainiharshsaini"><i className="fa-brands fa-github"></i></Link>
+                            <Link to="https://wa.me/qr/4AD67ER2Z2ZRD1"><i className="fa-brands fa-whatsapp"></i></Link>
                         </div>
-                    </div>
-                    <div className="right-link">
-                        <h4>Updates</h4>
-                        <div className="updates">
-                            <Link to="/blog">Blog</Link>
-                            <Link to="/faq">FAQ</Link>
-                            <Link to="/portfolio">Portfolio</Link>
                         </div>
-                    </div>
                 </div>
+            </div>
+            <div className="lower-footer">
+                <p>
+                © Copyright 2024 . Made by
+                </p>
+                <Link rel="noreferrer" target="_blank" href="https://harshsaini.tech">Harsh Saini</Link>
             </div>
         </div>
     )

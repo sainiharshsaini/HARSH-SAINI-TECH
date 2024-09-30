@@ -1,4 +1,4 @@
-.aboutme{
+.aboutme {
     width: 100%;
     background-color: var(--background-color);
     display: flex;
@@ -6,49 +6,71 @@
     justify-content: center;
     padding: 8rem 0;
 
-    .aboutme-section{
-        width: 70%;
+    .aboutme-section {
+        width: 80%;
         background-color: var(--elements-color);
         color: var(--text-color);
         padding: 4rem;
         border-radius: 0.5rem 0.5rem 8rem 0.5rem;
-        border-top: 8px solid royalblue;
-        box-shadow: 5px 5px 0 0 var(--shadow-color) ;
+        border-top: 0.5rem solid var(--elements-inside-color2);
+        box-shadow: 5px 5px 0 0 var(--shadow-color);
         cursor: pointer;
 
-        h2{
+        h2 {
             font-size: 2.5rem;
-            width: 12rem;
-            font-weight: 500;
-            border-bottom: 2px solid royalblue;
+            width: 20%;
+            font-weight: 600;
+            border-bottom: 2px solid var(--elements-inside-color2);
+            color: var(--heading-color);
         }
 
-        p{
+        p {
             font-size: 1.3rem;
-            font-style: italic;
             margin-top: 3rem;
+            color: var(--text-color);
+            line-height: 2rem;
 
-            span{
+            span {
                 color: royalblue;
+            }
+        }
+
+        .know-more {
+            margin-top: 3rem;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                padding: 0.8rem 2rem;
+                background: linear-gradient(150deg, var(--elements-inside-color), var(--elements-inside-color2));
+                color: var(--elements-inside-text-color);
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 2rem;
+
+                &:hover {
+                    background: var(--elements-inside-hover-color);
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 768px) {
-    .aboutme{
+    .aboutme {
         padding: 3rem 0;
 
-        .aboutme-section{
-            width: 85%;
-            padding: 1.5rem;
+        .aboutme-section {
+            width: 90%;
+            padding: 2rem 1.5rem;
 
-            h2{
+            h2 {
                 font-size: 2rem;
-                width: 9.5rem;
+                width: 60%;
+                // width: 9.5rem;
             }
 
-            p{
+            p {
                 margin-top: 2rem;
                 font-size: 1.1rem;
             }

@@ -19,12 +19,14 @@
         h2{
             font-size: 2.7rem;
             font-weight: 600;
-            color: royalblue;
+            color: var(--elements-inside-color2);
             margin-bottom: 3rem;
         }
 
         p{
             font-size: 1.1rem;
+            letter-spacing: 0.01rem;
+            line-height: 1.6rem;
             width: 70%;
         }
 
@@ -59,8 +61,7 @@
                     cursor: pointer;
 
                     &:hover{
-                        background-color: var(--elements-inside-color);
-                        box-shadow: 3px 3px 0px 1px royalblue;
+                        box-shadow: 3px 3px 0px 1px var(--hover-color);
                     }
                 }
 
@@ -80,16 +81,14 @@
                     height: 2.5rem;
                     width: 12rem;
                     font-size: 1rem;
-                    font-weight: 600;
-                    background: var(--elements-color);
+                    font-weight: 700;
+                    background: linear-gradient(150deg, var(--elements-inside-color), var(--elements-inside-color2));
                     border-radius: 0.3rem;
-                    color: var(--text-color);
-                    box-shadow: 3px 3px 0px 1px var(--shadow-color);
+                    color: var(--elements-inside-text-color);
                     cursor: pointer;
     
                     &:hover{
-                        background: var(--hover-color);
-                        box-shadow: 3px 3px 0px 1px royalblue;
+                        background: var(--elements-inside-hover-color);
                     }
                 }
             }

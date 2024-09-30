@@ -1,29 +1,28 @@
 .portfolio{
     position: relative;
     top: 70px;
-    background: var(--background-color);
 
     .portfolio-project {
         padding: 5rem 0;
         width: 100%;
-        background: var(--elements-color);
+        background: var(--background-color);
         display: flex;
         justify-content: center;
         align-items: center;
     
         .project-card {
-            background-color: var(--background-color);
-            width: 80%;
+            background-color: var(--elements-color);
+            width: 70%;
             padding: 1.5rem;
             display: flex;
             color: var(--text-color);
             flex-direction: row;
             border-radius: 0.3rem;
-            border-top: 0.4rem solid royalblue;
-            box-shadow: 5px 5px 0 1px var(--shadow-color);
+            border-top: 0.3rem solid royalblue;
+            box-shadow: 3px 3px 0 1px var(--shadow-color);
 
             &:hover{
-                box-shadow: 5px 5px 0 1px var(--hover-color);
+                box-shadow: 3px 3px 0 1px var(--hover-color);
             }
 
             .card-img-top {
@@ -45,7 +44,7 @@
                 p {
                     font-size: 1.1rem;
                     padding-bottom: 1rem;
-                    border-bottom: 2px solid royalblue;
+                    border-bottom: 2px solid var(--elements-inside-color2);
                 }
     
                 .technology-use {
@@ -67,18 +66,18 @@
 
                     a {
                         width: 40%;
-                        background: var(--elements-inside-color);
+                        background: linear-gradient(135deg, var(--elements-inside-color), var(--elements-inside-color2));
                         font-size: 0.8rem;
                         font-weight: 600;
                         padding: 0.4rem;
                         border-radius: 0.2rem;
                         text-align: center;
                         cursor: pointer;
-                        color: var(--text-color);
+                        color: var(--elements-inside-text-color);
                         text-decoration: none;
         
-                        &:hover{
-                            background-color: var(--hover-color);
+                        &:hover {
+                            background: var(--elements-inside-hover-color);
                         }
                     }
                 }
