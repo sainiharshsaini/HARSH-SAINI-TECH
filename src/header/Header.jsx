@@ -18,8 +18,8 @@ const Header = () => {
 
     const handleClick = (e) => {
         if (e.target.className === "active") {
-            console.log(e.target.className);
             setNavlinkbg("active");
+            setIsMobileMenuOpen(!isMobileMenuOpen);
         }
     };
 
@@ -36,11 +36,6 @@ const Header = () => {
                     <li>
                         <NavLink className={navlinkbg} onClick={handleClick} to="/">
                             HOME
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink className={navlinkbg} onClick={handleClick} to="about">
-                            ABOUT
                         </NavLink>
                     </li>
                     <li>
