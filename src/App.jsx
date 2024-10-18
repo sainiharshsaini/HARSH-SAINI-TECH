@@ -1,18 +1,24 @@
 import './App.css'
-import { Outlet } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Footer from './footer/Footer'
-import Header from './header/Header'
-
-import ThemeProvider from './contexts/ThemeContext'
+import ErrorPage from './pages/Error/ErrorPage'
+import Layout from './pages/Layout'
+import Home from './pages/home/Home'
+import Projects from './pages/projects/Projects'
+import Contact from './pages/contact/Contact'
 
 function App() {
   return (
-    <ThemeProvider>
-      <Header/>
-      <Outlet/>
-      <Footer/>
-    </ThemeProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route exact path="projects" element={<Projects />} />
+          <Route exact path="contact/:contactId" element={<Contact />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
