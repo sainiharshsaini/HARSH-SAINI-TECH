@@ -1,4 +1,5 @@
 import countryImg from './assets/projectImages/countryImg.png'
+import PortfolioImg from './assets/projectImages/HarshPortfolio.png'
 
 import htmlIcon from './assets/icons/HTML_icon.svg'
 import cssIcon from './assets/icons/CSS_icon.svg'
@@ -38,9 +39,9 @@ export default [
     },
     {
         id: crypto.randomUUID(),
-        projectImg: countryImg,
-        projectName: 'NEWS APP',
-        aboutProject: 'This is a countries App which is used to get the details of the country.',
+        projectImg: PortfolioImg,
+        projectName: 'MY PORTFOLIO',
+        aboutProject: 'This is My Portfolio used to showcasing my projects & skills.',
         techUsed: [
             {
                 id: crypto.randomUUID(),
@@ -59,7 +60,7 @@ export default [
                 icon: reactIcon,
             },
         ],
-        deployLink: 'https://countriesappbyharsh.netlify.app/',
-        githubLink: 'https://github.com/sainiharshsaini/COUNTRIES-APP',
+        deployLink: 'https://www.harshsaini.tech/',
+        githubLink: 'https://github.com/sainiharshsaini/HARSH-SAINI-TECH',
     },
 ]
